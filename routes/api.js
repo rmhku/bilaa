@@ -109,7 +109,7 @@ router.get('/downloader/ytmp4', async(req, res, next) => {
 
 router.get('/downloader/facebook', async (req, res, next) => {
 	var url = req.query.url
-	var apikey = req.query,.apikey
+	var apikey = req.query,apikey
 	
 	if (!url) return res.json(loghandler.noturl)  
 	if (!apikey) return res.json(loghandler.notapikey)
